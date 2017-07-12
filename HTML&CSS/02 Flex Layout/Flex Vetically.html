@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 以下 CSS 代码并没有考虑兼容性的问题 */
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            /* 使用 CSS3 flex layout 使元素垂直居中 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .circle {
+            /* 使用 border-radius 画出一个圆形 */
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
