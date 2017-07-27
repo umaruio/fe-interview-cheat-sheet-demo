@@ -8,6 +8,13 @@
 </head>
 <body>
     <div id="container"></div>
-    <script src="Ajax.js"></script>
+    <script src="Ajax_Promise.js"></script>
+    <script>
+        getData().then(res => {
+            document.getElementById('container').innerHTML = res
+        }).catch(err => {
+            console.log(err)
+        })
+    </script>
 </body>
 </html>
