@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .contaienr {
+            display: table;
+            overflow: hidden; /* Activate BFC */
+        }
+        .left {
+            display: table-cell;
+            width: 100%;
+        }
+        .input {
+            width: 100%;
+            display: block;
+        }
+        .right {
+            width: 100%;
+            display: table-cell;
+        }
+        .button {
+            margin-left: 10px; /* 避免重叠 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <input type="text" class="input">
+        </div>
+        <div class="right">
+            <input type="button" value="this is a aaaaa button" class="button">
+        </div>
+    </div>
+</body>
+</html>
